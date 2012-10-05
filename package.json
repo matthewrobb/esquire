@@ -1,0 +1,23 @@
+{
+  "name": "pom",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/esquire",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewrobb/esquire"
+  },
+  "dependencies": {
+    "escodegen": "",
+    "esprima": ""
+  },
+  "devDependencies": {
+    "mocha"  : "",
+    "chai"   : ""
+  },
+  "author": "Matthew Robb",
+  "license": "MIT"
+}

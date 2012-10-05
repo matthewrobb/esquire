@@ -1,0 +1,15 @@
+var { exec } = require("child_process")
+
+var launch = (cmd, callback) => {
+  var child = exec(cmd, callback)
+  child.stdout.pipe(process.stdout)
+  child.stderr.pipe(process.stderr)
+}
+
+task("compile", () => {
+  launch("six -co ./lib ./src")
+})
+
+task("watch", () => {
+  launch("six -cwo ./lib ./src")
+})

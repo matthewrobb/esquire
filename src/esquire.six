@@ -1,0 +1,86 @@
+var { generate, traverse } = require("escodegen")
+var { define } = require("./utils")
+
+class Node {
+
+}
+
+class Program extends Node {
+  
+}
+
+module.exports = function(tree) {
+
+
+
+  console.log((new $(tree)).test)
+
+}
+
+/*
+
+class Document extends Node {
+  documentElement,
+  createAttribute,
+  createElement,
+  createDocumentFragment,
+  getElementsByTagName
+}
+
+class Node {
+  attributes,
+
+  childNodes,
+  firstChild,
+  lastChild,
+  nextSibling,
+  nodeName,
+  nodeType,
+  parentNode,
+  previousSibling,
+
+  appendChild,
+  cloneNode,
+  hasChildNodes,
+  insertBefore,
+  removeChild,
+  replaceChild
+}
+
+class NodeList {
+  length,
+  item
+}
+
+class NamedNodeMap {
+  getNamedItem,
+  item,
+  removeNamedItem,
+  setNamedItem,
+
+  length
+}
+
+class Attr extends Node {
+  name,
+  specified,
+  value
+}
+
+class Element extends Node {
+  tagName
+
+  getAttribute
+  getAttributeNode
+
+  getElementsByTagName
+
+  removeAttribute
+  removeAttributeNode
+
+  setAttribute
+  setAttributeNode
+}
+
+*/
+
