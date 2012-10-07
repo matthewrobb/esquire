@@ -7,7 +7,7 @@ var esquire = require("../lib/esquire")
 describe("init testing", function() {
   it("", function(){
     var code = "var x;"
-    var ast = parse(code)
-    esquire(ast)
+    var ast = esquire(ast)
+    
   })
 })

@@ -1,19 +1,37 @@
 var { generate, traverse } = require("escodegen")
+var { parse } = require("esprima")
+
 var { define } = require("./utils")
+
+class Document {
+
+  constructor(source) {
+    var ast = parse(source)
+
+    console.log(ast)
+  }
+
+  get documentElement() {}
+
+  createAttribute() {}
+
+  createElement() {}
+
+  createDocumentFragment() {}
+
+  getElementsByTagName() {}
+
+}
 
 class Node {
 
+  constructor() {}
+
 }
 
-class Program extends Node {
-  
-}
+module.exports = function(source) {
 
-module.exports = function(tree) {
-
-
-
-  console.log((new $(tree)).test)
+  new Document(source)
 
 }
 
